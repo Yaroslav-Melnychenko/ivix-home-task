@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   overflow: auto;
   padding: 0;
   max-height: 400px;
@@ -37,15 +38,16 @@
         padding: 8px 15px;
         font-size: 14px;
         user-select: none;
-        min-width: 120px;
+        &:nth-child(2) {
+          min-width: 200px
+        }
         &:first-child {
-          min-width: 42px;
           position: sticky;
           left: 0;
         }
         &:last-child {
           border-right-color: transparent;
-          min-width: 88px;
+          text-align: center;
         }
       }
       &:hover {

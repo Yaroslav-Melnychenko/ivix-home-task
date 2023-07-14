@@ -47,7 +47,7 @@ const ProductsTable: React.FC<Props> = ({
                 <td style={inStock ? { color: '#8FD694' } : { color: '#D69090' }}>
                   <b>{inStock ? 'In Stock' : 'Out of stock'}</b>
                 </td>
-                <td>{row.price}</td>
+                <td>{`${row.price}$`}</td>
                 <td><b>{row.count}</b></td>
                 <td>{row.reviews}</td>
                 <td>{row.sellerLocation}</td>
